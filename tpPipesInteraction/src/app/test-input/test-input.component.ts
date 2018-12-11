@@ -11,6 +11,9 @@ export class TestInputComponent implements OnInit {
   login: string
   @Input()
   pass: string
+  afficheMessage() {
+    alert(this.login + " " + this.pass);
+  }
   constructor() { }
 
   ngOnInit() {
